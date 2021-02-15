@@ -1,10 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i,t,p;
     scanf("%d",&n);
-    n=n*2;
-    int a[n];
+    while(i<n+1)
+    {
+        scanf("%d %d",&t,&p);
+        i++;
+    }
+
 
     return 0;
 }

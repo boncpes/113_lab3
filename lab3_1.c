@@ -1,27 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int num[4],sum[5];
-    int max=0,local=0,i,j,plus;
+    int num,sum=0,max=0,local=0,total,i,j;
     for(i=0; i<5; i++)
     {
-        plus=0;
-        scanf("%d %d %d %d",&num[0],&num[1],&num[2],&num[3]);
+        sum=0;
         for(j=0; j<4; j++)
         {
-            plus = plus + num[j];
+            scanf("%d",&num);
+            sum+=num;
         }
-        sum[i]=plus;
-    }
-    max=sum[0];
-    for(i=1; i<6; i++)
-    {
-        if(sum[i]>max)
+        if(sum>max)
         {
-            max=sum[i];
-            local=i;
+            max=sum;
+            local=i+1;
         }
     }
-    printf("%d %d",local+1,max);
+    printf("%d %d",local,max);
     return 0;
 }
