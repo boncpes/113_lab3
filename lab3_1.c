@@ -19,3 +19,4 @@ int main()
     printf("%d %d",local,max);
     return 0;
 }
+
