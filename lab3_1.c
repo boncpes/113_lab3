@@ -8,7 +8,7 @@ int main()
         scanf("%d %d %d %d",&num[0],&num[1],&num[2],&num[3]);
         for(j=0; j<4; j++)
         {
-            plus=plus+num[j];
+            plus = plus + num[j];
         }
         sum[i]=plus;
     }
@@ -18,9 +18,9 @@ int main()
         if(sum[i]>max)
         {
             max=sum[i];
-            local=i+1;
+            local=i;
         }
     }
-    printf("%d %d",local,max);
+    printf("%d %d",local+1,max);
     return 0;
 }

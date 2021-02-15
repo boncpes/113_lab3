@@ -1,7 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int k;
+    int k,i;
+    scanf("%d",&k);
+
 
     return 0;
 }
