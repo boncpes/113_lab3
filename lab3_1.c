@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int num[4],sum[5],max=0,local=0,i,j,plus;
+    int num[4],sum[5];
+    int max=0,local=0,i,j,plus;
     for(i=0; i<5; i++)
     {
         plus=0;
