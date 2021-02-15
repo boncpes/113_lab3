@@ -12,12 +12,13 @@ int main()
         }
         sum[i]=plus;
     }
-    for(i=0; i<6; i++)
+    max=sum[0];
+    for(i=1; i<6; i++)
     {
-        if(i==0)
+        if(sum[i]>max)
+        {
             max=sum[i];
-        else if(sum[i]>max)
-            max=sum[i];
+        }
     }
     for(i=0; i<5; i++)
     {
