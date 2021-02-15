@@ -18,14 +18,7 @@ int main()
         if(sum[i]>max)
         {
             max=sum[i];
-        }
-    }
-    for(i=0; i<5; i++)
-    {
-        if(max==sum[i])
-        {
             local=i+1;
-            break;
         }
     }
     printf("%d %d",local,max);
