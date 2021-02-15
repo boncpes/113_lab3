@@ -1,28 +1,32 @@
 #include<stdio.h>
-int plus(int num[5])
-{
-    int sumz=0;
-    for(i=0; i<5; i++)
-    {
-        sumz+=num[i]
-    }
-    return sumz;
-}
 int main()
 {
-    int num[5],sum[6],end=-1;
-    while(end<6)
+    int num[4],sum[5],max=0,local=0,i,j,plus;
+    for(i=0; i<5; i++)
     {
-        for(i=0; i<5; i++)
+        plus=0;
+        scanf("%d %d %d %d",&num[0],&num[1],&num[2],&num[3]);
+        for(j=0; j<4; j++)
         {
-            scanf("%d",num[i]);
+            plus=plus+num[j];
         }
-        end++;
-        sum[end]=plus(num);
+        sum[i]=plus;
+    }
+    for(i=0; i<6; i++)
+    {
+        if(i==0)
+            max=sum[i];
+        else if(sum[i]>max)
+            max=sum[i];
     }
     for(i=0; i<5; i++)
     {
-        if(sum[i])
+        if(max==sum[i])
+        {
+            local=i+1;
+            break;
+        }
     }
+    printf("%d %d",local,max);
     return 0;
 }
