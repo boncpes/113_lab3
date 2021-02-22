@@ -9,20 +9,10 @@ int main()
     {
         for(a=2; n>1; a++)
         {
-
             while(n%a==0)
             {
-                for(b=2; b<=a/2; b++)
-                {
-                    if(a%b==0)
-                    {
-                        c++;
-                    }
-                }
                 n/=a;
             }
-            if(c>0)
-                break;
             j++;
         }
         if(j==4)
